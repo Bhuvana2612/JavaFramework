@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sample Login">
+
+<listeners>
+  <listener class-name="com.inetbaking.utilities.Reporting"></listener>
+</listeners>
+  <test thread-count="1" name="Banking">
+  
+  
+  <parameter name="browser" value="Chrome"></parameter>
+  <classes>
+    <!--   Always specify the package name.classname inside the Class name.
+  Many Tests can be executed inside suite.  -->
+  
+  <class name="com.inetbaking.testcases.TC_logintest"/> 
+   <class name="com.inetbaking.testcases.TC_loginDDT_001"/> 
+   <class name="com.inetbaking.testcases.TC_addCustomer_002"/>
+  </classes>
+  </test> <!-- Test -->
+  </suite> <!-- Suite -->
